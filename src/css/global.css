@@ -15,6 +15,10 @@ body {
   margin: 0 auto;
 }
 
+.container-nav {
+  justify-content: center;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -22,33 +26,27 @@ a {
 
 .top-bar {
   background: #ee4d2d;
-  color: white;
+  color: #FFFF;
   font-size: 13px;
   padding: 10px 0;
 }
 
-.top-actions a{
-  flex-direction: row;
-  justify-items: flex-end;
-  align-items: flex-end ;
-  align-content: center;
-  gap: 10px;
-  padding: 0px;
-  margin-left: 0%;
-  justify-content: flex-end;
-
-}
-
 .top-nav ul {
   display: flex;
-  flex-direction: row;     /* Deita os itens lado a lado */
-  justify-content: center; /* Taca eles no meio da barra horizontalmente */
-  align-items: center;     /* Centraliza na vertical */
-  gap: 20px;               /* Dá um espaço de 20px entre cada item */
-  list-style: none;        /* Remove os pontinhos da lista */
+  flex-direction: row;
+  /* Deita os itens lado a lado */
+  justify-content: center;
+  /* Taca eles no meio da barra horizontalmente */
+  align-items: center;
+  /* Centraliza na vertical */
+  gap: 20px;
+  /* Dá um espaço de 20px entre cada item */
+  list-style: none;
+  /* Remove os pontinhos da lista */
   padding: 0;
   margin: 0;
 }
+
 .main-header {
   background: #ee4d2d;
   padding: 16px 0;
@@ -61,7 +59,7 @@ a {
 }
 
 .logo h1 {
-  color: white;
+  color: #FFFF;
   font-size: 24px;
 }
 
@@ -84,7 +82,7 @@ a {
 .search-bar button {
   background: #d84325;
   border: none;
-  color: white;
+  color: #FFFF;
   padding: 0 16px;
   cursor: pointer;
 }
@@ -93,7 +91,7 @@ a {
   background: transparent;
   border: none;
   font-size: 20px;
-  color: white;
+  color: #FFFF;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -105,7 +103,7 @@ a {
 }
 
 .card-produto {
-  background: white;
+  background: #FFFF;
   padding: 10px;
   border-radius: 4px;
   transition: 0.2s;
@@ -114,7 +112,7 @@ a {
 
 .card-produto:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card-produto img {
@@ -147,7 +145,7 @@ section h2 {
 }
 
 .categoria {
-  background: white;
+  background: #FFFF;
   text-align: center;
   padding: 12px;
   border-radius: 4px;
@@ -170,7 +168,7 @@ section h2 {
 
 .btn {
   background: #ee4d2d;
-  color: white;
+  color: #FFFF;
   padding: 10px 16px;
   border: none;
   cursor: pointer;
@@ -183,7 +181,7 @@ section h2 {
 }
 
 .footer {
-  background: white;
+  background: #FFFf;
   padding: 40px 0;
   margin-top: 40px;
 }
@@ -196,4 +194,122 @@ section h2 {
   margin-bottom: 6px;
   font-size: 14px;
   display: flex;
+}
+
+/* Centralizando as ações do Header (Carrinho e Perfil) */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-actions a {
+  display: flex;
+  /* Arruma aquele link solto do carrinho */
+}
+
+.carousel-inner img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.banner-main {
+  flex: 10;
+  /* Pega mais espaço que os pequenininhos */
+}
+
+.banner-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Espalha as duas imagens menores */
+  gap: 10px;
+}
+
+.banner img {
+  border-radius: 4px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Arrumando o menu que tava "feio pra krlh" */
+.menu {
+  background-color: #fb7730;
+  padding: 12px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  /* Dá uma sombrinha de leve */
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: #FFFF;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.menu a:hover {
+  color: #ee4d2d;
+  /* Fica laranja da Zoopii ao passar o mouse */
+}
+
+/* Diz para o container alinhar tudo na mesma linha */
+.top-bar .container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* O segredo para segurar o .top-actions no canto */
+}
+
+/* Faz a navegação ocupar o espaço todo pra lista continuar no centro */
+.top-nav {
+  width: 100%;
+}
+
+/* Taca o grupo de login/cadastro pra direita */
+.top-actions {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 15px;
+  /* Espaço entre Login e Cadastrar */
+}
+
+/* APAGUE TUDO que estava no seu .top-actions a antigo e deixe só isso: */
+.top-actions a {
+  padding: 5px;
+  /* Só pra ter uma área de clique melhor */
+  font-weight: bold;
+}
+
+.promo-banner {
+  margin-top: 16px;
+}
+
+.promo-banner .container {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-banner img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.promo-banner img:hover {
+  transform: scale(1.01);
 }
