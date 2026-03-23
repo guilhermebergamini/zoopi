@@ -24,9 +24,31 @@ a {
   background: #ee4d2d;
   color: white;
   font-size: 13px;
-  padding: 6px 0;
+  padding: 10px 0;
 }
 
+.top-actions a{
+  flex-direction: row;
+  justify-items: flex-end;
+  align-items: flex-end ;
+  align-content: center;
+  gap: 10px;
+  padding: 0px;
+  margin-left: 0%;
+  justify-content: flex-end;
+
+}
+
+.top-nav ul {
+  display: flex;
+  flex-direction: row;     /* Deita os itens lado a lado */
+  justify-content: center; /* Taca eles no meio da barra horizontalmente */
+  align-items: center;     /* Centraliza na vertical */
+  gap: 20px;               /* Dá um espaço de 20px entre cada item */
+  list-style: none;        /* Remove os pontinhos da lista */
+  padding: 0;
+  margin: 0;
+}
 .main-header {
   background: #ee4d2d;
   padding: 16px 0;
@@ -173,4 +195,5 @@ section h2 {
 .footer-links ul li {
   margin-bottom: 6px;
   font-size: 14px;
+  display: flex;
 }
