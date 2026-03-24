@@ -34,15 +34,10 @@ a {
 .top-nav ul {
   display: flex;
   flex-direction: row;
-  /* Deita os itens lado a lado */
   justify-content: center;
-  /* Taca eles no meio da barra horizontalmente */
   align-items: center;
-  /* Centraliza na vertical */
   gap: 20px;
-  /* Dá um espaço de 20px entre cada item */
   list-style: none;
-  /* Remove os pontinhos da lista */
   padding: 0;
   margin: 0;
 }
@@ -65,12 +60,12 @@ a {
 }
 
 .logo img {
-  height: 30px; /* Reduzi o tamanho para não esticar a barra */
+  height: 30px;
   width: auto;
 }
 
 .logo h1 {
-  font-size: 18px; /* Texto menor para combinar com a top bar */
+  font-size: 18px;
   color: #fff;
   margin: 0;
 }
@@ -208,7 +203,6 @@ section h2 {
   display: flex;
 }
 
-/* Centralizando as ações do Header (Carrinho e Perfil) */
 .header-actions {
   display: flex;
   align-items: center;
@@ -217,18 +211,18 @@ section h2 {
 
 .header-actions a {
   display: flex;
-  /* Arruma aquele link solto do carrinho */
 }
 
 .carousel-inner img {
-  height: 250px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
   border-radius: 8px;
 }
 
 .banner-main {
   flex: 10;
-  /* Pega mais espaço que os pequenininhos */
 }
 
 .banner-side {
@@ -236,7 +230,6 @@ section h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* Espalha as duas imagens menores */
   gap: 10px;
 }
 
@@ -246,10 +239,9 @@ section h2 {
   object-fit: cover;
 }
 
-/* Arrumando o menu que tava "feio pra krlh" */
 .menu {
   background-color: #fb7730;
-  padding: 0; /* Tirar o padding do container pai ajuda no alinhamento */
+  padding: 0;
   border-bottom: 2px solid #d84325;
 }
 
@@ -268,12 +260,11 @@ section h2 {
   color: #FFFF;
   font-weight: 500;
   font-size: 13px;
-  text-transform: none; /* Letras normais costumam cansar menos a vista */
+  text-transform: none;
   transition: all 0.3s ease;
   position: relative;
 }
 
-/* Efeito de linha que aparece embaixo ao passar o mouse */
 .menu a::after {
   content: '';
   position: absolute;
@@ -296,24 +287,23 @@ section h2 {
 
 .top-bar .container {
   display: flex;
-  justify-content: space-between; /* Espalha: Logo na esquerda, Nav no meio, Sair na direita */
+  justify-content: space-between;
   align-items: center;
   padding: 5px 0;
-  position: static; /* Resetando o position anterior */
+  position: static;
 }
 
-/* Faz a navegação ocupar o espaço todo pra lista continuar no centro */
 .top-nav {
-  flex: 1; /* Faz a nav ocupar o espaço central */
+  flex: 1;
   display: flex;
-  justify-content: center; /* Centraliza a lista de links */
+  justify-content: center;
 }
 
-/* Taca o grupo de login/cadastro pra direita */
 .top-actions {
   display: flex;
   align-items: center;
 }
+
 .top-nav ul {
   display: flex;
   gap: 15px;
@@ -322,7 +312,6 @@ section h2 {
   padding: 0;
 }
 
-/* APAGUE TUDO que estava no seu .top-actions a antigo e deixe só isso: */
 .top-actions a {
   font-weight: bold;
   font-size: 13px;
@@ -338,10 +327,10 @@ section h2 {
 }
 
 .promo-banner img {
-  width: 100%; /* Faz a imagem ocupar a largura total do container (1200px) */
-  height: auto; /* Deixa a altura se ajustar automaticamente baseada na imagem real */
-  object-fit: contain; /* Garante que a imagem apareça inteira sem cortes */
-  border-radius: 8px; /* Mantém as bordas arredondadas do exemplo */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .promo-banner img:hover {
