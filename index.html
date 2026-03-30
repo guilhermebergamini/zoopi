@@ -18,33 +18,26 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-</head>
+
 
 <body>
   <!-- HEADER -->
   <header class="header">
     <!-- TOP BAR --> <!-- tem que centralizar essa merda, mó preg-->
     <div class="top-bar">
-  <div class="container">
-    <div class="logo">
-      <img src="src/assets/images/logo.png" alt="Logo">
-      <h1>Zoopii</h1>
-    </div>
+      <div class="container">
+        <div class="logo">
+          <img src="src/assets/images/logo.png" alt="Logo">
+          <h1>Zoopii</h1>
+        </div>
 
-    <nav class="top-nav">
-      <ul>
-        <li><a href="#">Central do Vendedor</a></li>
-        <li><a href="#">Ajuda</a></li>
-        <li><a href="#">Vender</a></li>
-        <li><a href="#">Baixar App</a></li>
-      </ul>
-    </nav>
 
-    <div class="top-actions">
-      <a href="#">Sair</a>
+
+        <div class="top-actions">
+          <a href="#">Sair</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 
     <!-- MENU --> <!-- esta feio pra krlh isso aqui, arruma for me pls-->
@@ -52,12 +45,12 @@
       <div class="container-nav">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Cadastro Cliente</a></li>
-          <li><a href="#">Cadastro Funcionário</a></li>
-          <li><a href="#">Cadastro Produto</a></li>
-          <li><a href="#">Ver Clientes</a></li>
-          <li><a href="#">Ver Funcionários</a></li>
-          <li><a href="#">Ver Produtos</a></li>
+          <li><a href="src/pages/cadastro_cliente.html">Cadastro Cliente</a></li>
+          <li><a href="src/pages/cadastro_funcionario.html">Cadastro Funcionário</a></li>
+          <li><a href="src/pages/cadastro_produto.html">Cadastro Produto</a></li>
+          <li><a href="src/pages/ver_clientes.html">Ver Clientes</a></li>
+          <li><a href="src/pages/ver_funcionarios.html">Ver Funcionários</a></li>
+          <li><a href="#src/pages/ver_produtos.html">Ver Produtos</a></li>
         </ul>
       </div>
     </nav>
@@ -82,10 +75,10 @@
               <img src="src/assets/images/banner1zoopi.png" class="d-block w-100">
             </div>
             <div class="carousel-item">
-              <img src="src/assets/images/banner2.png" class="d-block w-100">
+              <img src="src/assets/images/banner1zoopi.png" class="d-block w-100">
             </div>
             <div class="carousel-item">
-              <img src="src/assets/images/banner3.png" class="d-block w-100">
+              <img src="src/assets/images/banner1zoopi.png" class="d-block w-100">
             </div>
           </div>
 
@@ -99,26 +92,20 @@
             <span class="carousel-control-next-icon"></span>
           </button>
         </div>
-      </div>
-    </section>
 
-    <section class="promo-banner">
-        <div class="container">
-          <div class="banner">
-            <img src="src/assets/images/Ofertas exclusivas para novos usuários (1).png">
-          </div>
-
+        <div class="promo-banner">
+          <img src="src/assets/images/1-53355213.png">
         </div>
+      </div>
+
+
     </section>
 
     <!-- PRODUTOS -->
     <section class="produtos">
       <div class="container">
-        <h2>Produtos</h2>
-
-        <div class="grid-produtos" id="lista-produtos">
-          <!-- Produtos aqui  -->
-        </div>
+        <h2 class="titulo-secao">DESCOBERTAS DO DIA</h2>
+        <div class="grid-produtos" id="lista-produtos"></div>
       </div>
     </section>
   </main>

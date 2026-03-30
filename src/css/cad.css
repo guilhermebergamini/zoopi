@@ -1,0 +1,92 @@
+.pagina-form {
+    background: #d9d9d9;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  
+  .form-card {
+    background: #fff;
+    padding: 32px 40px;
+    width: 100%;
+    max-width: 460px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form-titulo {
+    color: #ee4d2d;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    font-size: 14px;
+    outline: none;
+    color: #555;
+  }
+  
+  .form-input:focus {
+    border-color: #ee4d2d;
+  }
+  
+  .form-label-foto {
+    color: #ee4d2d;
+    font-size: 14px;
+    margin-bottom: -4px;
+    text-align: center;
+  }
+  
+  .btn-cadastrar {
+    width: 100%;
+    padding: 12px;
+    background: #ee4d2d;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  .btn-cadastrar:hover {
+    background: #d84325;
+  }
+
+  .file-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .btn-escolher {
+    padding: 6px 14px;
+    border: 1px solid #ee4d2d;
+    color: #ee4d2d;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 20px;
+    justify-content: center;
+  }
+  
+  .btn-escolher:hover {
+    background: #fff0ed;
+  }
+  
+  .file-nome {
+    font-size: 13px;
+    color: #555;
+    text-align: right;
+  }

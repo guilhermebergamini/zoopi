@@ -318,21 +318,30 @@ section h2 {
 }
 
 .promo-banner {
-  margin-top: 16px;
-}
-
-.promo-banner .container {
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  line-height: 0;
+  margin-top: 8px; /* espaçinho entre carrossel e promo */
+  margin-bottom: 10px;
 }
 
 .promo-banner img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
+  width: 1000px;
+  height: 300px;
+  display: block;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5.5rem;
+
 }
 
-.promo-banner img:hover {
-  transform: scale(1.01);
+.titulo-secao {
+  text-align: center;
+  color: #ee4d2d;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
 }
