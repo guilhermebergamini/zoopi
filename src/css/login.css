@@ -1,0 +1,376 @@
+/* =============================================
+   LOGIN.CSS — Xhopii Login Page
+   ============================================= */
+
+/* ---------- Reset & Base ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* =============================================
+   HEADER
+   ============================================= */
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.top-bar {
+  padding: 12px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+}
+
+.logo h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ee4d2d;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.header-separator {
+  color: #ccc;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.header-title {
+  font-size: 16px;
+  color: #555;
+}
+
+.help-link {
+  font-size: 13px;
+  color: #ee4d2d;
+}
+
+.help-link:hover {
+  text-decoration: underline;
+}
+
+/* =============================================
+   MAIN — LOGIN BG
+   ============================================= */
+.login-bg {
+  background-color: #ee4d2d;
+  min-height: calc(100vh - 60px - 280px);
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+}
+
+/* =============================================
+   LOGIN CARD
+   ============================================= */
+.login-card {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 36px 40px 28px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.login-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+/* ---------- Inputs ---------- */
+.login-input {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  height: 44px;
+  font-size: 14px;
+  color: #333;
+  padding: 0 12px;
+  transition: border-color 0.2s;
+}
+
+.login-input:focus {
+  border-color: #ee4d2d;
+  box-shadow: 0 0 0 2px rgba(238, 77, 45, 0.12);
+  outline: none;
+}
+
+.login-input::placeholder {
+  color: #bbb;
+}
+
+/* ---------- Botão Entrar ---------- */
+.btn-enter {
+  background-color: #ee4d2d;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 2px;
+  height: 44px;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.btn-enter:hover {
+  background-color: #d84327;
+  color: #ffffff;
+}
+
+/* ---------- Links auxiliares ---------- */
+.login-links {
+  font-size: 13px;
+}
+
+.login-links a {
+  color: #ee4d2d;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Divisor OU ---------- */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ccc;
+  font-size: 12px;
+  margin: 16px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+/* ---------- Botões Sociais ---------- */
+.social-buttons {
+  flex-wrap: wrap;
+}
+
+.btn-social {
+  flex: 1;
+  min-width: 110px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  background: #fff;
+  font-size: 13px;
+  color: #444;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-social:hover {
+  background: #f5f5f5;
+  border-color: #bbb;
+  color: #222;
+}
+
+.btn-social .fa {
+  font-size: 15px;
+}
+
+.btn-social .fa-facebook-official {
+  color: #1877f2;
+}
+
+.btn-social .fa-google {
+  color: #ea4335;
+}
+
+/* ---------- Cadastrar ---------- */
+.register-text {
+  font-size: 13px;
+  color: #888;
+}
+
+.register-text a {
+  color: #ee4d2d;
+  font-weight: 600;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.site-footer {
+  background: #f5f5f5;
+  border-top: 1px solid #e8e8e8;
+  padding: 36px 0 0;
+}
+
+.footer-links {
+  gap: 0;
+}
+
+.footer-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  font-size: 12px;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.footer-links ul li a:hover {
+  color: #ee4d2d;
+}
+
+/* ---------- Payment ---------- */
+.payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.payment-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #fff;
+  color: #555;
+  letter-spacing: 0.3px;
+}
+
+.payment-badge.pix   { color: #32bcad; border-color: #32bcad; }
+.payment-badge.visa  { color: #1a1f71; border-color: #1a1f71; }
+.payment-badge.amex  { color: #007bc1; border-color: #007bc1; }
+.payment-badge.elo   { color: #222; }
+
+/* ---------- Social List ---------- */
+.social-list {
+  list-style: none;
+  padding: 0;
+}
+
+.social-list li {
+  margin-bottom: 8px;
+}
+
+.social-list li a {
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
+
+.social-list li a:hover {
+  color: #ee4d2d;
+}
+
+.social-list .fa {
+  width: 16px;
+  text-align: center;
+}
+
+/* ---------- QR & App badges ---------- */
+.qr-placeholder {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #aaa;
+  background: #f9f9f9;
+}
+
+.app-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.app-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #444;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 12px;
+  background: #fff;
+  transition: background 0.15s;
+}
+
+.app-badge:hover {
+  background: #f0f0f0;
+  color: #222;
+}
+
+/* ---------- Footer Bottom ---------- */
+.footer-bottom {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 30px;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #999;
+}
