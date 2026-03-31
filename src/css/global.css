@@ -136,11 +136,11 @@ a {
   font-weight: bold;
 }
 
-section {
+.banner, .produtos {
   margin: 24px 0;
 }
 
-section h2 {
+.banner h2, .produtos h2 {
   font-size: 18px;
   margin-bottom: 16px;
 }
