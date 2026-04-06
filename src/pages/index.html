@@ -1,86 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-        Shopee Brasil | Na Shopee Compensa Mais | Frete Grátis e Cupom!
-    </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/src/css/global.css" />
-    <link rel="stylesheet" href="/src/css/header.css" />
-    <link rel="stylesheet" href="/src/css/home.css" />
-    <link ref="stylesheet" href="/src/css/cad.css" <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="/src/assets/images/icone zoppi.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Shopee Brasil | Na Shopee Compensa Mais | Frete Grátis e Cupom!
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/src/css/global.css" />
+  <link rel="stylesheet" href="/src/css/header.css" />
+  <link rel="stylesheet" href="/src/css/home.css" />
+  <link rel="icon" href="/src/assets/images/icone zoppi.png" type="image/png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <?php 
+  include_once "/src/pages/login.html";
+  ?>
+  
 </head>
 
+
 <body>
-
-    <header class="header">
-        <!-- TOP BAR --> <!-- tem que centralizar essa merda, mó preg-->
-        <section class="top-bar">
-            <section class="container">
-                <section class="logo">
-                    <img src="/src/assets/images/logo.png" alt="Logo">
-                    <h1>Zoopii</h1>
-                </section>
-
-
-
-                <section class="top-actions">
-                    <a href="/src/pages/login.html">Sair</a>
-                </section>
-            </section>
+  <!-- HEADER -->
+  <header class="header">
+    <!-- TOP BAR --> <!-- tem que centralizar essa merda, mó preg-->
+    <section class="top-bar">
+      <section class="container">
+        <section class="logo">
+          <img src="/src/assets/images/logo.png" alt="Logo">
+          <h1>Zoopii</h1>
         </section>
 
 
-        <!-- MENU --> <!-- esta feio pra krlh isso aqui, arruma for me pls-->
-        <nav class="menu">
-            <section class="container-nav">
-                <ul>
-                    <li><a href="/src/pages/index.html">Home</a></li>
-                    <li><a href="cadastro_cliente.html">Cadastro Cliente</a></li>
-                    <li><a href="cadastro_funcionario.html">Cadastro Funcionário</a></li>
-                    <li><a href="cadastro_produto.html">Cadastro Produto</a></li>
-                    <li><a href="ver_clientes.html">Ver Clientes</a></li>
-                    <li><a href="ver_funcionarios.html">Ver Funcionários</a></li>
-                    <li><a href="ver_produtos.html">Ver Produtos</a></li>
-                </ul>
-            </section>
-        </nav>
-    </header>
 
-    <main class="pagina-form">
-        <section class="form-card">
-            <h2 class="form-titulo">Cadastrar Funcionário</h2>
-
-            <input type="text" placeholder="Nome" class="form-input">
-            <input type="text" placeholder="Sobrenome" class="form-input">
-            <input type="text" placeholder="CPF" class="form-input">
-            <input type="date" class="form-input">
-            <input type="tel" placeholder="Telefone" class="form-input">
-            <input type="text" placeholder="Cargo / Função" class="form-input">
-            <input type="number" id="valor" placeholder="Salario" inputmode="decimal" placeholder="0,00"
-                class="form-input">
-            <input type="email" placeholder="Email" class="form-input">
-            <input type="password" placeholder="Senha" class="form-input">
-
-            <label class="form-label-foto">Selecionar foto de perfil:</label>
-            <section class="file-input-wrapper">
-                <label class="btn-escolher">Escolher arquivo</label>
-                <input type="file" id="foto-perfil" hidden>
-                <span class="file-nome">Nenhum arquivo escolhido</span>
-            </section>
-
-            <button class="btn btn-cadastrar">CADASTRAR</button>
+        <section class="top-actions">
+          <a href="/src/pages/login.html">Sair</a>
         </section>
-    </main>
+      </section>
+    </section>
+
+
+    <!-- MENU --> <!-- esta feio pra krlh isso aqui, arruma for me pls--> <!-- ce esqueceu de linkar nas outras tela burro--> 
+    <nav class="menu">
+      <section class="container-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cadastro_cliente.html">Cadastro Cliente</a></li>
+          <li><a href="cadastro_funcionario.html">Cadastro Funcionário</a></li>
+          <li><a href="cadastro_produto.html">Cadastro Produto</a></li>
+          <li><a href="ver_clientes.html">Ver Clientes</a></li>
+          <li><a href="ver_funcionarios.html">Ver Funcionários</a></li>
+          <li><a href="ver_produtos.html">Ver Produtos</a></li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- BANNER --> <!-- tem que centralizar essa merda, mó preg-->
+    <section class="banner">
+      <section class="container">
+        <section id="carouselExampleIndicators" class="carousel slide">
+
+          <section class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+              class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+          </section>
+
+          <section class="carousel-inner">
+            <section class="carousel-item active">
+              <img src="/src/assets/images/banner1zoopi.png" class="d-block w-100">
+            </section>
+            <section class="carousel-item">
+              <img src="/src/assets/images/banner1zoopi.png" class="d-block w-100">
+            </section>
+            <section class="carousel-item">
+              <img src="/src/assets/images/banner1zoopi.png" class="d-block w-100">
+            </section>
+          </section>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </section>
+
+        <section class="promo-banner">
+          <img src="/src/assets/images/1-53355213.png">
+        </section>
+      </section>
+
+
+    </section>
+
+    <!-- PRODUTOS -->
+    <a href="produto.html"><section class="produtos">
+      <section class="container">
+        <h2 class="titulo-secao">DESCOBERTAS DO DIA</h2>
+        <section class="grid-produtos" id="lista-produtos"></section>
+      </section>
+    </section></a>
+  </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -145,9 +179,8 @@
         <!-- Atendimento / QR / Apps -->
         <section class="col-md-3">
           <h6 class="footer-title">ATENDIMENTO AO CLIENTE</h6>
-  <img src="/src/assets/images/qr code.png" alt="qr" style="padding: 2px; border: none; height: 124px; object-fit: contain; width: auto; background-color: white;">
+          <img src="/src/assets/images/qr code.png" alt="qr" style="padding: 2px; border: none; height: 124px; object-fit: contain; width: auto; background-color: white;">
           <section class="app-badges mt-2">
-            <a href="#" class="app-badge">
             <a href="#" class="app-badge">
               <img src="/src/assets/images/googleplay.png" alt="googleplay" style="padding: 2px; border: none; height: 24px; object-fit: contain; width: auto; background-color: white;"> Google Play
             </a>
@@ -165,18 +198,8 @@
     </section>
   </footer>
 
-
-    <script>
-        $(function () {
-            $('#moeda').maskMoney({
-                prefix: 'R$ ',
-                allowNegative: true,
-                thousands: '.',
-                decimal: ',',
-                affixesStay: true
-            });
-        });
-    </script>
+  <!-- JS -->
+  <script src="/src/js/main.js"></script>
 </body>
 
 </html>

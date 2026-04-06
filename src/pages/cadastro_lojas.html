@@ -41,37 +41,34 @@
 
 
         <!-- MENU --> <!-- esta feio pra krlh isso aqui, arruma for me pls-->
-        <nav class="menu">
-            <section class="container-nav">
-                <ul>
-                    <li><a href="/src/pages/index.html">Home</a></li>
-                    <li><a href="cadastro_cliente.html">Cadastro Cliente</a></li>
-                    <li><a href="cadastro_funcionario.html">Cadastro Funcionário</a></li>
-                    <li><a href="cadastro_produto.html">Cadastro Produto</a></li>
-                    <li><a href="ver_clientes.html">Ver Clientes</a></li>
-                    <li><a href="ver_funcionarios.html">Ver Funcionários</a></li>
-                    <li><a href="ver_produtos.html">Ver Produtos</a></li>
-                </ul>
-            </section>
-        </nav>
-    </header>
+<nav class="menu">
+      <section class="container-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cadastro_cliente.html">Cadastro Cliente</a></li>
+          <li><a href="cadastro_funcionario.html">Cadastro Funcionário</a></li>
+          <li><a href="cadastro_produto.html">Cadastro Produto</a></li>
+          <li><a href="ver_clientes.html">Ver Clientes</a></li>
+          <li><a href="ver_funcionarios.html">Ver Funcionários</a></li>
+          <li><a href="ver_produtos.html">Ver Produtos</a></li>
+        </ul>
+      </section>
+    </nav>
+  </header>
 
     <main class="pagina-form">
         <section class="form-card">
-            <h2 class="form-titulo">Cadastrar Funcionário</h2>
+            <h2 class="form-titulo">Cadastrar Loja</h2>
 
-            <input type="text" placeholder="Nome" class="form-input">
-            <input type="text" placeholder="Sobrenome" class="form-input">
-            <input type="text" placeholder="CPF" class="form-input">
-            <input type="date" class="form-input">
-            <input type="tel" placeholder="Telefone" class="form-input">
-            <input type="text" placeholder="Cargo / Função" class="form-input">
-            <input type="number" id="valor" placeholder="Salario" inputmode="decimal" placeholder="0,00"
-                class="form-input">
-            <input type="email" placeholder="Email" class="form-input">
-            <input type="password" placeholder="Senha" class="form-input">
+            <input type="text" placeholder="Razão Social" class="form-input">
+            <input type="text" placeholder="Nome Fantasia" class="form-input">
+            <input type="text" placeholder="CNPJ" class="form-input">
+            <input type="text" placeholder="Inscrição Estadual" class="form-input">
+            <input type="text" placeholder="Endereço Completo" class="form-input">
+            <input type="tel" placeholder="Telefone Comercial" class="form-input">
+            <input type="email" placeholder="E-mail Corporativo" class="form-input">
 
-            <label class="form-label-foto">Selecionar foto de perfil:</label>
+            <label class="form-label-foto">Selecionar foto da loja:</label>
             <section class="file-input-wrapper">
                 <label class="btn-escolher">Escolher arquivo</label>
                 <input type="file" id="foto-perfil" hidden>
@@ -165,18 +162,6 @@
     </section>
   </footer>
 
-
-    <script>
-        $(function () {
-            $('#moeda').maskMoney({
-                prefix: 'R$ ',
-                allowNegative: true,
-                thousands: '.',
-                decimal: ',',
-                affixesStay: true
-            });
-        });
-    </script>
 </body>
 
 </html>

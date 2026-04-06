@@ -1,0 +1,437 @@
+/* =============================================
+   PRODUTO.CSS — Xhopii Product Page
+   ============================================= */
+
+/* ---------- Reset & Base ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* =============================================
+   HEADER
+   ============================================= */
+.header {
+  background: #ee4d2d;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.top-bar {
+  padding: 0;
+}
+
+.top-bar .container {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ee4d2d;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 28px;
+  width: auto;
+}
+
+.logo h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+/* Nav menu */
+.header-nav {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.header-nav a {
+  font-size: 13px;
+  color: #333;
+  padding: 0 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.header-nav a:hover,
+.header-nav a.active {
+  color: #ee4d2d;
+  border-bottom-color: #ee4d2d;
+}
+
+/* =============================================
+   MAIN — PRODUTO BG
+   ============================================= */
+.produto-bg {
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 52px - 280px);
+  padding: 20px 0;
+}
+
+/* =============================================
+   PRODUTO CARD
+   ============================================= */
+.produto-card {
+  background: #ffffff;
+  border-radius: 2px;
+  padding: 24px 28px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* =============================================
+   MINIATURAS
+   ============================================= */
+.produto-thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.thumb {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s;
+  background: #fff;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.thumb:hover {
+  border-color: #ee4d2d;
+}
+
+.thumb.active {
+  border-color: #ee4d2d;
+}
+
+/* =============================================
+   IMAGEM PRINCIPAL
+   ============================================= */
+.produto-imagem {
+  flex-shrink: 0;
+  width: 300px;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.produto-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.2s ease;
+}
+
+/* =============================================
+   INFORMAÇÕES DO PRODUTO
+   ============================================= */
+.produto-info {
+  flex: 1;
+  padding-left: 8px;
+}
+
+.produto-titulo {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.produto-preco {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ee4d2d;
+  margin-bottom: 4px;
+}
+
+.produto-estoque {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 18px;
+}
+
+.produto-label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+/* ---------- Botões de Cor ---------- */
+.produto-cores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.btn-cor {
+  padding: 5px 14px;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  background: #fff;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-cor:hover {
+  border-color: #ee4d2d;
+  color: #ee4d2d;
+}
+
+.btn-cor.active {
+  border-color: #ee4d2d;
+  color: #ee4d2d;
+}
+
+/* ---------- Botões de Tamanho ---------- */
+.produto-tamanhos {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.btn-tam {
+  width: 44px;
+  height: 40px;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  background: #fff;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-tam:hover {
+  border-color: #ee4d2d;
+  color: #ee4d2d;
+}
+
+.btn-tam.active {
+  border-color: #ee4d2d;
+  color: #ee4d2d;
+}
+
+/* ---------- Tamanho Selecionado ---------- */
+.produto-tamanho-selecionado {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ---------- Botão Comprar ---------- */
+.btn-comprar {
+  background-color: #ee4d2d;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  transition: background-color 0.2s;
+}
+
+.btn-comprar:hover {
+  background-color: #d84327;
+}
+
+.btn-comprar:active {
+  transform: scale(0.98);
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.site-footer {
+  background: #f5f5f5;
+  border-top: 1px solid #e8e8e8;
+  padding: 36px 0 0;
+}
+
+.footer-links {
+  gap: 0;
+}
+
+.footer-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  font-size: 12px;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.footer-links ul li a:hover {
+  color: #ee4d2d;
+}
+
+/* ---------- Payment ---------- */
+.payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.payment-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #fff;
+  color: #555;
+  letter-spacing: 0.3px;
+}
+
+.payment-badge.pix   { color: #32bcad; border-color: #32bcad; }
+.payment-badge.visa  { color: #1a1f71; border-color: #1a1f71; }
+.payment-badge.amex  { color: #007bc1; border-color: #007bc1; }
+.payment-badge.elo   { color: #222; }
+
+/* ---------- Social List ---------- */
+.social-list {
+  list-style: none;
+  padding: 0;
+}
+
+.social-list li {
+  margin-bottom: 8px;
+}
+
+.social-list li a {
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
+
+.social-list li a:hover {
+  color: #ee4d2d;
+}
+
+.social-list .fa {
+  width: 16px;
+  text-align: center;
+}
+
+/* ---------- QR & App badges ---------- */
+.qr-placeholder {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #aaa;
+  background: #f9f9f9;
+}
+
+.app-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.app-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #444;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 12px;
+  background: #fff;
+  transition: background 0.15s;
+}
+
+.app-badge:hover {
+  background: #f0f0f0;
+  color: #222;
+}
+
+/* ---------- Footer Bottom ---------- */
+.footer-bottom {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 30px;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #999;
+}

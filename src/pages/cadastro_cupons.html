@@ -41,42 +41,40 @@
 
 
         <!-- MENU --> <!-- esta feio pra krlh isso aqui, arruma for me pls-->
-        <nav class="menu">
-            <section class="container-nav">
-                <ul>
-                    <li><a href="/src/pages/index.html">Home</a></li>
-                    <li><a href="cadastro_cliente.html">Cadastro Cliente</a></li>
-                    <li><a href="cadastro_funcionario.html">Cadastro Funcionário</a></li>
-                    <li><a href="cadastro_produto.html">Cadastro Produto</a></li>
-                    <li><a href="ver_clientes.html">Ver Clientes</a></li>
-                    <li><a href="ver_funcionarios.html">Ver Funcionários</a></li>
-                    <li><a href="ver_produtos.html">Ver Produtos</a></li>
-                </ul>
-            </section>
-        </nav>
-    </header>
+<nav class="menu">
+      <section class="container-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cadastro_cliente.html">Cadastro Cliente</a></li>
+          <li><a href="cadastro_funcionario.html">Cadastro Funcionário</a></li>
+          <li><a href="cadastro_produto.html">Cadastro Produto</a></li>
+          <li><a href="ver_clientes.html">Ver Clientes</a></li>
+          <li><a href="ver_funcionarios.html">Ver Funcionários</a></li>
+          <li><a href="ver_produtos.html">Ver Produtos</a></li>
+        </ul>
+      </section>
+    </nav>
+  </header>
 
     <main class="pagina-form">
         <section class="form-card">
-            <h2 class="form-titulo">Cadastrar Funcionário</h2>
+            <h2 class="form-titulo">Cadastrar Cupom</h2>
 
-            <input type="text" placeholder="Nome" class="form-input">
-            <input type="text" placeholder="Sobrenome" class="form-input">
-            <input type="text" placeholder="CPF" class="form-input">
+            <input type="text" placeholder="Código do Cupom (Ex: PROMO10)" class="form-input">
+            <input type="text" placeholder="Descrição do Cupom" class="form-input">
+            
+            <select class="form-input" style="color: #757575;">
+                <option value="" disabled selected>Tipo de Desconto</option>
+                <option value="porcentagem">Porcentagem (%)</option>
+                <option value="valor">Valor Fixo (R$)</option>
+            </select>
+            
+            <input type="number" placeholder="Valor ou Porcentagem do Desconto" class="form-input">
+            <input type="number" placeholder="Valor Mínimo de Compra" class="form-input">
+            <input type="number" placeholder="Quantidade Disponível" class="form-input">
+            
+            <label class="form-label-foto" style="margin-top: 5px; display: block;">Data de Validade:</label>
             <input type="date" class="form-input">
-            <input type="tel" placeholder="Telefone" class="form-input">
-            <input type="text" placeholder="Cargo / Função" class="form-input">
-            <input type="number" id="valor" placeholder="Salario" inputmode="decimal" placeholder="0,00"
-                class="form-input">
-            <input type="email" placeholder="Email" class="form-input">
-            <input type="password" placeholder="Senha" class="form-input">
-
-            <label class="form-label-foto">Selecionar foto de perfil:</label>
-            <section class="file-input-wrapper">
-                <label class="btn-escolher">Escolher arquivo</label>
-                <input type="file" id="foto-perfil" hidden>
-                <span class="file-nome">Nenhum arquivo escolhido</span>
-            </section>
 
             <button class="btn btn-cadastrar">CADASTRAR</button>
         </section>
@@ -165,18 +163,6 @@
     </section>
   </footer>
 
-
-    <script>
-        $(function () {
-            $('#moeda').maskMoney({
-                prefix: 'R$ ',
-                allowNegative: true,
-                thousands: '.',
-                decimal: ',',
-                affixesStay: true
-            });
-        });
-    </script>
 </body>
 
 </html>

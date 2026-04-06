@@ -345,3 +345,144 @@ a {
   padding-bottom: 12px;
   border-bottom: 1px solid #ddd;
 }
+
+.site-footer {
+  background: #f5f5f5;
+  border-top: 1px solid #e8e8e8;
+  padding: 36px 0 0;
+}
+
+.footer-links {
+  gap: 0;
+}
+
+.footer-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  font-size: 12px;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.footer-links ul li a:hover {
+  color: #ee4d2d;
+}
+
+/* ---------- Payment ---------- */
+.payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.payment-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #fff;
+  color: #555;
+  letter-spacing: 0.3px;
+}
+
+.payment-badge.pix   { color: #32bcad; border-color: #32bcad; }
+.payment-badge.visa  { color: #1a1f71; border-color: #1a1f71; }
+.payment-badge.amex  { color: #007bc1; border-color: #007bc1; }
+.payment-badge.elo   { color: #222; }
+
+/* ---------- Social List ---------- */
+.social-list {
+  list-style: none;
+  padding: 0;
+}
+
+.social-list li {
+  margin-bottom: 8px;
+}
+
+.social-list li a {
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
+
+.social-list li a:hover {
+  color: #ee4d2d;
+}
+
+.social-list .fa {
+  width: 16px;
+  text-align: center;
+}
+
+/* ---------- QR & App badges ---------- */
+.qr-placeholder {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #aaa;
+  background: #f9f9f9;
+}
+
+.app-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.app-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #444;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 12px;
+  background: #fff;
+  transition: background 0.15s;
+}
+
+.app-badge:hover {
+  background: #f0f0f0;
+  color: #222;
+}
+
+/* ---------- Footer Bottom ---------- */
+.footer-bottom {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 30px;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #999;
+}

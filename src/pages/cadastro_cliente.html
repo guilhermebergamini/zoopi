@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/src/css/home.css" />
     <link ref="stylesheet" href="/src/css/cad.css" <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="/src/assets/images/icone zoppi.png" type="image/png">
 </head>
 
 <body>
@@ -33,27 +34,27 @@
 
 
                 <section class="top-actions">
-                    <a href="#">Sair</a>
+                    <a href="/src/pages/login.html">Sair</a>
                 </section>
             </section>
         </section>
 
 
         <!-- MENU --> <!-- esta feio pra krlh isso aqui, arruma for me pls-->
-        <nav class="menu">
-            <section class="container-nav">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/src/pages/cadastro_cliente.html">Cadastro Cliente</a></li>
-                    <li><a href="#">Cadastro Funcionário</a></li>
-                    <li><a href="#">Cadastro Produto</a></li>
-                    <li><a href="#">Ver Clientes</a></li>
-                    <li><a href="#">Ver Funcionários</a></li>
-                    <li><a href="#">Ver Produtos</a></li>
-                </ul>
-            </section>
-        </nav>
-    </header>
+<nav class="menu">
+      <section class="container-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cadastro_cliente.html">Cadastro Cliente</a></li>
+          <li><a href="cadastro_funcionario.html">Cadastro Funcionário</a></li>
+          <li><a href="cadastro_produto.html">Cadastro Produto</a></li>
+          <li><a href="ver_clientes.html">Ver Clientes</a></li>
+          <li><a href="ver_funcionarios.html">Ver Funcionários</a></li>
+          <li><a href="ver_produtos.html">Ver Produtos</a></li>
+        </ul>
+      </section>
+    </nav>
+  </header>
 
     <main class="pagina-form">
         <section class="form-card">
@@ -78,30 +79,88 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <section class="container">
-            <section class="footer-links">
-                <h3>Institucional</h3>
-                <ul>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Carreiras</a></li>
-                </ul>
-            </section>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <section class="container">
+      <section class="row footer-links">
 
-            <section class="footer-links">
-                <h3>Ajuda</h3>
-                <ul>
-                    <li><a href="#">Suporte</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </section>
-
-            <section class="footer-copy">
-                <p>© 2026 Zoopi</p>
-            </section>
+        <!-- Atendimento ao Cliente -->
+        <section class="col-md-2">
+          <h6 class="footer-title">ATENDIMENTO AO CLIENTE</h6>
+          <ul>
+            <li><a href="#">Central de Ajuda</a></li>
+            <li><a href="#">Como Comprar</a></li>
+            <li><a href="#">Métodos de Pagamento</a></li>
+            <li><a href="#">Garantia Xhopii</a></li>
+            <li><a href="#">Devolução e Reembolso</a></li>
+            <li><a href="#">Fale Conosco</a></li>
+            <li><a href="#">Ouvidoria</a></li>
+          </ul>
         </section>
-    </footer>
+
+        <!-- Sobre a Xhopii -->
+        <section class="col-md-2">
+          <h6 class="footer-title">SOBRE A XHOPII</h6>
+          <ul>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Políticas Xhopii</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Programa de Afiliados da Xhopii</a></li>
+            <li><a href="#">Seja um Entregador Xhopii</a></li>
+            <li><a href="#">Ofertas Relâmpago</a></li>
+            <li><a href="#">Xhopii Blog</a></li>
+            <li><a href="#">Imprensa</a></li>
+          </ul>
+        </section>
+
+        <!-- Pagamento -->
+        <section class="col-md-2">
+          <h6 class="footer-title">PAGAMENTO</h6>
+          <section class="payment-icons" style="display: flex; gap: 5px; flex-wrap: wrap;">
+            <img src="/src/assets/images/pix.png" alt="Pix" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
+            <img src="/src/assets/images/boleto.png" alt="Boleto" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
+            <img src="/src/assets/images/amex.png" alt="AMEX" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
+            <img src="/src/assets/images/visa.png" alt="VISA" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
+            <img src="/src/assets/images/mc.png" alt="Mastercard" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
+            <img src="/src/assets/images/hiper.png" alt="Hiper" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
+            <img src="/src/assets/images/elo.png" alt="Elo" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
+          </section>
+        </section>
+
+        <!-- Siga-nos -->
+        <section class="col-md-2">
+          <h6 class="footer-title">SIGA-NOS</h6>
+          <ul class="social-list">
+            <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i> YouTube</a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </section>
+
+        <!-- Atendimento / QR / Apps -->
+        <section class="col-md-3">
+          <h6 class="footer-title">ATENDIMENTO AO CLIENTE</h6>
+ <img src="/src/assets/images/qr code.png" alt="qr" style="padding: 2px; border: none; height: 124px; object-fit: contain; width: auto; background-color: white;">
+          <section class="app-badges mt-2">
+            <a href="#" class="app-badge">
+              <img src="/src/assets/images/googleplay.png" alt="googleplay" style="padding: 2px; border: none; height: 24px; object-fit: contain; width: auto; background-color: white;"> Google Play
+            </a>
+            <a href="#" class="app-badge">
+              <img src="/src/assets/images/apple.png" alt="appstore" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;"> App Store
+            </a>
+          </section>
+        </section>
+
+      </section><!-- /.row -->
+    </section>
+
+    <section class="footer-bottom">
+      <p>© 2023 Xhopii. Todos os direitos acadêmicos reservados</p>
+    </section>
+  </footer>
+
 </body>
 
 </html>
