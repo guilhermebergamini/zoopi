@@ -1,11 +1,11 @@
 // produto.js — Xhopii Product Page
 
 const images = [
-  '/src/assets/images/produto1.png',
-  '/src/assets/images/produto2.png',
-  '/src/assets/images/produto3.png',
-  '/src/assets/images/produto4.png',
-  '/src/assets/images/produto5.png'
+  '../assets/images/produto1.png',
+  '../assets/images/produto2.png',
+  '../assets/images/produto3.png',
+  '../assets/images/produto4.png',
+  '../assets/images/produto5.png'
 ];
 
 const colorBtns    = document.querySelectorAll('.btn-cor');

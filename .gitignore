@@ -1,0 +1,3 @@
+# Arquivos ignorados pelo Git
+.env
+/vendor/
