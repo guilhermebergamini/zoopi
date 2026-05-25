@@ -1,43 +1,39 @@
 <?php
-// Arquivo criado para estrutura MVC do projeto Zoopi.
+
 class Router
 {
     private array $rotas = [];
 
-    public function get($url, $acao)
+    public function get(string $url, string $acao): void
     {
         $this->rotas['GET'][$url] = $acao;
     }
 
-    public function post($url, $acao)
+    public function post(string $url, string $acao): void
     {
         $this->rotas['POST'][$url] = $acao;
     }
 
-    public function executar()
+    public function executar(): void
     {
-        $url = parse_url($_SERVER['REQUEST_URI'] , PHP_URL_PATH);
+        $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $metodo = $_SERVER['REQUEST_METHOD'];
+        $url = str_replace(BASE_URL, '', $url);
 
-        $base = '/zoopi/public';
-        $url= str_replace($base , '' , $url);
-
-        if ($url == ''){
+        if ($url === '') {
             $url = '/';
         }
 
-        if (isset($this->rotas[$metodo][$url])){
-            [$controller, $metodoController] = explode('@' , $this->rotas[$metodo][$url]);
-
-            require_once __DIR__ . '/../controllers/' . $controller . '.php';
-
-            $obj = new $controller();
-            $obj->$metodoController();
-        }   else {
-            echo "Erro 404 - Página não encontrada";
+        if (!isset($this->rotas[$metodo][$url])) {
+            http_response_code(404);
+            echo 'Erro 404 - Pagina nao encontrada';
+            return;
         }
+
+        [$controller, $metodoController] = explode('@', $this->rotas[$metodo][$url]);
+        require_once __DIR__ . '/../controllers/' . $controller . '.php';
+
+        $obj = new $controller();
+        $obj->$metodoController();
     }
 }
-
-
-?>

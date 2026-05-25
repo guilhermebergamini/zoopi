@@ -1,16 +1,14 @@
 <?php
-// Arquivo criado para estrutura MVC do projeto Zoopi.
 
 require_once __DIR__ . '/../config/Database.php';
 
 class Model
 {
-    protected $db;
+    protected PDO $db;
 
-    public function __contrusct()
+    public function __construct()
     {
         $database = new Database();
         $this->db = $database->conectar();
     }
 }
-?>
