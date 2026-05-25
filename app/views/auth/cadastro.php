@@ -1,2 +1,1 @@
-<?php
-// Arquivo criado para estrutura MVC do projeto Zoopi.
+<?php require __DIR__ . '/../clientes/create.php'; ?>
