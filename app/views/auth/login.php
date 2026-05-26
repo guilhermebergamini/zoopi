@@ -1,20 +1,28 @@
 <main class="login-bg">
-    <section class="container d-flex justify-content-center align-items-center">
-        <section class="login-card">
-            <h2 class="login-title">Login</h2>
-            <form method="post" action="<?= url('/login') ?>">
-                <section class="mb-3">
-                    <input type="email" name="email" class="form-control login-input" placeholder="Email" required>
-                </section>
-                <section class="mb-3">
-                    <input type="password" name="senha" class="form-control login-input" placeholder="Senha" required>
-                </section>
-                <button type="submit" class="btn btn-enter w-100">ENTRAR</button>
-                <section class="d-flex justify-content-between mt-2 login-links">
-                    <a href="<?= url('/redefinir-senha') ?>">Esqueci minha senha</a>
-                    <a href="<?= url('/cadastro') ?>">Cadastrar</a>
-                </section>
-            </form>
-        </section>
+    <section class="login-card">
+        <h1 class="login-title">Login</h1>
+
+        <form class="login-form" method="post" action="<?= url('/login') ?>">
+            <input type="email" name="email" class="login-input" placeholder="Email" autocomplete="email" required>
+            <input type="password" name="senha" class="login-input" placeholder="Senha" autocomplete="current-password" required>
+            <button type="submit" class="login-submit">ENTRE</button>
+
+            <section class="login-links">
+                <a href="<?= url('/redefinir-senha') ?>">Esqueci minha senha</a>
+                <a href="#">Fazer login com SMS</a>
+            </section>
+
+            <section class="divider">
+                <span>OU</span>
+            </section>
+
+            <section class="social-buttons">
+                <button type="button" class="btn-social"><i class="fa fa-facebook-official"></i>Facebook</button>
+                <button type="button" class="btn-social"><img class="social-icon" src="<?= asset('assets/images/google-g.svg') ?>" alt="">Google</button>
+                <button type="button" class="btn-social"><i class="fa fa-apple"></i>Apple</button>
+            </section>
+
+            <p class="register-text">Novo na Xhopii? <a href="<?= url('/cadastro') ?>">Cadastrar</a></p>
+        </form>
     </section>
 </main>

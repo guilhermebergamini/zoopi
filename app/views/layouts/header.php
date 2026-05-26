@@ -48,6 +48,9 @@ if (!function_exists('imagem')) {
     <link rel="stylesheet" href="<?= asset('css/home.css') ?>">
     <link rel="stylesheet" href="<?= asset('css/cad.css') ?>">
     <link rel="stylesheet" href="<?= asset('css/ver_produtos.css') ?>">
+    <link rel="stylesheet" href="<?= asset('css/produto.css') ?>">
+    <link rel="stylesheet" href="<?= asset('css/redefenir_senha.css') ?>">
+    <link rel="stylesheet" href="<?= asset('css/login.css') ?>">
     <link rel="icon" href="<?= asset('assets/images/icone zoppi.png') ?>" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -62,6 +65,18 @@ if (!function_exists('imagem')) {
     </style>
 </head>
 <body>
+<?php if (in_array(($titulo ?? ''), ['Login', 'Redefinir senha'], true)): ?>
+<header class="login-auth-header">
+    <section class="login-header-inner">
+        <a class="login-brand" href="<?= url('/login') ?>">
+            <img src="<?= asset('assets/images/logo.png') ?>" alt="Logo Xhopii">
+            <strong class="login-brand-name">Xhopii</strong>
+            <span class="login-brand-title"><?= ($titulo ?? '') === 'Login' ? 'Entre' : e($titulo) ?></span>
+        </a>
+        <a href="#" class="login-help">Precisa de ajuda?</a>
+    </section>
+</header>
+<?php else: ?>
 <header class="header">
     <section class="top-bar">
         <section class="container">
@@ -96,6 +111,7 @@ if (!function_exists('imagem')) {
         </section>
     </nav>
 </header>
+<?php endif; ?>
 
 <?php if (!empty($_SESSION['flash'])): ?>
     <section class="container mt-3">

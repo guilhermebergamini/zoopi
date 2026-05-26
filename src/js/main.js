@@ -1,29 +1,21 @@
-const produtos = [
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "../assets/images/produto1.png" },
-  // adiciona quantos quiser...
+﻿const produtos = [
+  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "/zoopi/src/assets/images/produto1.png" },
+  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "/zoopi/src/assets/images/produto1.png" },
+  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "/zoopi/src/assets/images/produto1.png" },
+  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "/zoopi/src/assets/images/produto1.png" },
+  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "/zoopi/src/assets/images/produto1.png" },
+  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "/zoopi/src/assets/images/produto1.png" },
+  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "/zoopi/src/assets/images/produto1.png" },
+  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "/zoopi/src/assets/images/produto1.png" },
+  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "/zoopi/src/assets/images/produto1.png" },
+  { nome: "Camisa Desenvolvedor Front-End CSS", preco: "R$ 59,90", estoque: 171, img: "/zoopi/src/assets/images/produto1.png" },
 ];
 
 function renderProdutos() {
   const lista = document.getElementById("lista-produtos");
+  if (!lista) {
+    return;
+  }
 
   produtos.forEach(p => {
     lista.innerHTML += `
@@ -31,7 +23,7 @@ function renderProdutos() {
         <img src="${p.img}" alt="${p.nome}">
         <h3>${p.nome}</h3>
         <span class="preco">${p.preco}</span>
-        <p>${p.estoque} disponíveis</p>
+        <p>${p.estoque} disponiveis</p>
       </div>
     `;
   });

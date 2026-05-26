@@ -4,180 +4,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>zoopi | Entre na sua conta</title>
-
-  <link rel="icon" href="../assets/images/icone zoppi.png">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="../css/login.css"/>
-  <link rel="stylesheet" href="../css/header.css" />
-  <link rel="stylesheet" href="../css/home.css" />
-
+  <title>Xhopii | Entre</title>
+  <link rel="icon" href="/zoopi/src/assets/images/icone zoppi.png" type="image/png">
+  <link rel="stylesheet" href="/zoopi/src/css/login.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="../assets/images/icone zoppi.png" type="image/png">
 </head>
 
 <body>
-
-  <!-- HEADER -->
-  <header class="header">
-    <section class="top-bar">
-      <section class="container d-flex align-items-center justify-content-between">
-        <section class="logo">
-          <img src="../assets/images/logo.png" alt="Logo zoppi">
-          <h1>Zoppi</h1>
-          <span class="header-separator">|</span>
-          <span class="header-title">Entre</span>
-        </section>
-        <a href="#" class="help-link">Precisa de ajuda?</a>
-      </section>
+  <header class="login-auth-header">
+    <section class="login-header-inner">
+      <a class="login-brand" href="login.html">
+        <img src="/zoopi/src/assets/images/logo.png" alt="Logo Xhopii">
+        <strong class="login-brand-name">Xhopii</strong>
+        <span class="login-brand-title">Entre</span>
+      </a>
+      <a href="#" class="login-help">Precisa de ajuda?</a>
     </section>
   </header>
 
-  <!-- MAIN CONTENT -->
   <main class="login-bg">
-    <section class="container d-flex justify-content-center align-items-center">
-      <section class="login-card">
-        <h2 class="login-title">Login</h2>
+    <section class="login-card">
+      <h1 class="login-title">Login</h1>
 
-        <form>
-          <!-- Email -->
-          <section class="mb-3">
-            <input type="email" class="form-control login-input" placeholder="Email" autocomplete="email" />
-          </section>
+      <form class="login-form">
+        <input type="email" class="login-input" placeholder="Email" autocomplete="email">
+        <input type="password" class="login-input" placeholder="Senha" autocomplete="current-password">
+        <a class="login-submit" href="index.html">ENTRE</a>
 
-          <!-- Senha -->
-          <section class="mb-3">
-            <input type="password" class="form-control login-input" placeholder="Senha"
-              autocomplete="current-password" />
-          </section>
+        <section class="login-links">
+          <a href="redefenir_senha.html">Esqueci minha senha</a>
+          <a href="#">Fazer login com SMS</a>
+        </section>
 
-          <!-- Botão Entrar -->
-          <a href="index.html"> <button type="submit" class="btn btn-enter w-100">ENTRE</button></a>
+        <section class="divider">
+          <span>OU</span>
+        </section>
 
-          <!-- Links auxiliares -->
-          <section class="d-flex justify-content-between mt-2 login-links">
-            <a href="redefenir_senha.html">Esqueci minha senha</a>
-            <a href="#">Fazer login com SMS</a>
-          </section>
+        <section class="social-buttons">
+          <button type="button" class="btn-social"><i class="fa fa-facebook-official"></i>Facebook</button>
+          <button type="button" class="btn-social"><img class="social-icon" src="/zoopi/src/assets/images/google-g.svg" alt="">Google</button>
+          <button type="button" class="btn-social"><i class="fa fa-apple"></i>Apple</button>
+        </section>
 
-          <!-- Divisor OU -->
-          <section class="divider">
-            <span>OU</span>
-          </section>
-
-          <!-- Botões sociais -->
-          <section class="d-flex justify-content-center gap-2 social-buttons">
-            <button type="button" class="btn btn-social">
-              <i class="fa fa-facebook-official"></i> Facebook
-            </button>
-            <button type="button" class="btn btn-social">
-              <i class="fa fa-google"></i> Google
-            </button>
-            <button type="button" class="btn btn-social">
-              <i class="fa fa-apple"></i> Apple
-            </button>
-          </section>
-
-          <!-- Cadastro -->
-          <p class="text-center mt-3 register-text">
-            Novo na Xhopii? <a href="#">Cadastrar</a>
-          </p>
-        </form>
-      </section>
+        <p class="register-text">Novo na Xhopii? <a href="#">Cadastrar</a></p>
+      </form>
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <section class="container">
-      <section class="row footer-links">
+  <footer class="login-footer">
+    <section class="login-footer-grid">
+      <section>
+        <h2 class="login-footer-title">ATENDIMENTO AO CLIENTE</h2>
+        <ul>
+          <li><a href="#">Central de Ajuda</a></li>
+          <li><a href="#">Como Comprar</a></li>
+          <li><a href="#">Metodos de Pagamento</a></li>
+          <li><a href="#">Garantia Xhopii</a></li>
+          <li><a href="#">Devolucao e Reembolso</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Ouvidoria</a></li>
+        </ul>
+      </section>
 
-        <!-- Atendimento ao Cliente -->
-        <section class="col-md-2">
-          <h6 class="footer-title">ATENDIMENTO AO CLIENTE</h6>
-          <ul>
-            <li><a href="#">Central de Ajuda</a></li>
-            <li><a href="#">Como Comprar</a></li>
-            <li><a href="#">Métodos de Pagamento</a></li>
-            <li><a href="#">Garantia Xhopii</a></li>
-            <li><a href="#">Devolução e Reembolso</a></li>
-            <li><a href="#">Fale Conosco</a></li>
-            <li><a href="#">Ouvidoria</a></li>
-          </ul>
+      <section>
+        <h2 class="login-footer-title">SOBRE A XHOPII</h2>
+        <ul>
+          <li><a href="#">Sobre Nos</a></li>
+          <li><a href="#">Politicas Xhopii</a></li>
+          <li><a href="#">Politica de Privacidade</a></li>
+          <li><a href="#">Programa de Afiliados da Xhopii</a></li>
+          <li><a href="#">Seja um Entregador Xhopii</a></li>
+          <li><a href="#">Ofertas Relampago</a></li>
+          <li><a href="#">Xhopii Blog</a></li>
+          <li><a href="#">Imprensa</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="login-footer-title">PAGAMENTO</h2>
+        <section class="login-payment">
+          <img src="/zoopi/src/assets/images/pix.png" alt="Pix">
+          <img src="/zoopi/src/assets/images/boleto.png" alt="Boleto">
+          <img src="/zoopi/src/assets/images/amex.png" alt="American Express">
+          <img src="/zoopi/src/assets/images/visa.png" alt="Visa">
+          <img src="/zoopi/src/assets/images/mc.png" alt="Mastercard">
+          <img src="/zoopi/src/assets/images/hiper.png" alt="Hipercard">
+          <img src="/zoopi/src/assets/images/elo-logo.svg" alt="Elo">
         </section>
+      </section>
 
-        <!-- Sobre a Xhopii -->
-        <section class="col-md-2">
-          <h6 class="footer-title">SOBRE A XHOPII</h6>
-          <ul>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Políticas Xhopii</a></li>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Programa de Afiliados da Xhopii</a></li>
-            <li><a href="#">Seja um Entregador Xhopii</a></li>
-            <li><a href="#">Ofertas Relâmpago</a></li>
-            <li><a href="#">Xhopii Blog</a></li>
-            <li><a href="#">Imprensa</a></li>
-          </ul>
-        </section>
+      <section>
+        <h2 class="login-footer-title">SIGA-NOS</h2>
+        <ul class="login-social-list">
+          <li><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i>YouTube</a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+        </ul>
+      </section>
 
-        <!-- Pagamento -->
-        <section class="col-md-2">
-          <h6 class="footer-title">PAGAMENTO</h6>
-          <section class="payment-icons" style="display: flex; gap: 5px; flex-wrap: wrap;">
-            <img src="../assets/images/pix.png" alt="Pix" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-            <img src="../assets/images/boleto.png" alt="Boleto" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-            <img src="../assets/images/amex.png" alt="AMEX" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-            <img src="../assets/images/visa.png" alt="VISA" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-            <img src="../assets/images/mc.png" alt="Mastercard" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-            <img src="../assets/images/hiper.png" alt="Hiper" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-            <img src="../assets/images/elo.png" alt="Elo" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-          </section>
-        </section>
-
-        <!-- Siga-nos -->
-        <section class="col-md-2">
-          <h6 class="footer-title">SIGA-NOS</h6>
-          <ul class="social-list">
-            <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
-            <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i> YouTube</a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-          </ul>
-        </section>
-
-        <!-- Atendimento / QR / Apps -->
-        <section class="col-md-3">
-          <h6 class="footer-title">ATENDIMENTO AO CLIENTE</h6>
-  <img src="../assets/images/qr code.png" alt="qr" style="padding: 2px; border: none; height: 124px; object-fit: contain; width: auto; background-color: white;">
-          <section class="app-badges mt-2">
-            <a href="#" class="app-badge">
-            <a href="#" class="app-badge">
-              <img src="../assets/images/googleplay.png" alt="googleplay" style="padding: 2px; border: none; height: 24px; object-fit: contain; width: auto; background-color: white;"> Google Play
-            </a>
-            <a href="#" class="app-badge">
-              <img src="../assets/images/apple.png" alt="appstore" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;"> App Store
-            </a>
-          </section>
-        </section>
-
-      </section><!-- /.row -->
+      <section>
+        <h2 class="login-footer-title">ATENDIMENTO AO CLIENTE</h2>
+        <img class="login-qr" src="/zoopi/src/assets/images/qr code.png" alt="QR Code">
+        <img class="login-store" src="/zoopi/src/assets/images/google-play-badge.svg" alt="Google Play">
+        <img class="login-store" src="/zoopi/src/assets/images/app-store-badge.svg" alt="App Store">
+      </section>
     </section>
 
-    <section class="footer-bottom">
+    <section class="login-footer-bottom">
       <p>© 2023 Xhopii. Todos os direitos acadêmicos reservados</p>
     </section>
   </footer>
-
-  <!-- JS -->
-  <script src="../js/main.js"></script>
 </body>
 
 </html>

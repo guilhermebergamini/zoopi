@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 696 58">
+  <defs>
+    <linearGradient id="red" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff4327"/>
+      <stop offset="1" stop-color="#f23a20"/>
+    </linearGradient>
+    <filter id="drop" x="-20%" y="-40%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#8e1d14" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="696" height="58" rx="3" fill="url(#red)"/>
+  <path d="M8 4h76v49L46 58 8 53z" fill="#fff4d2"/>
+  <text x="46" y="17" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="800" fill="#ff3c24">Apenas</text>
+  <text x="46" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="800" fill="#ff3c24">Novos</text>
+  <text x="46" y="43" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="800" fill="#ff3c24">Usuários</text>
+  <circle cx="26" cy="47" r="11" fill="#ffc028" opacity=".95"/>
+  <circle cx="16" cy="49" r="9" fill="#ffd24a" opacity=".85"/>
+  <path d="M90 8h3l2-6 2 6h6l-5 3 2 6-5-4-5 4 2-6z" fill="#ffd447"/>
+  <text x="112" y="37" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#fff">Exclusivo na 1ª compra</text>
+  <g transform="translate(370 10) rotate(3 54 20)" filter="url(#drop)">
+    <rect width="106" height="39" rx="9" fill="#10a986" stroke="#e6fff7" stroke-width="3"/>
+    <path d="M14 23h20v-9h10l11 9h8v8h-6a7 7 0 0 1-14 0H30a7 7 0 0 1-14 0h-2z" fill="#fff"/>
+    <circle cx="23" cy="31" r="3" fill="#10a986"/>
+    <circle cx="50" cy="31" r="3" fill="#10a986"/>
+    <text x="76" y="17" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="900" fill="#fff">FRETE</text>
+    <text x="76" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="900" fill="#fff">GRÁTIS</text>
+  </g>
+  <g transform="translate(484 5)" filter="url(#drop)">
+    <rect x="0" y="7" width="86" height="45" rx="10" fill="#f5fbff" stroke="#138bd6" stroke-width="4"/>
+    <path d="M6 7h12l5 10H1zM22 7h12l3 10H18zM38 7h12v10H34zM54 7h12l-3 10H50zM70 7h12l-5 10H66z" fill="#fff"/>
+    <path d="M1 7h17l-5 10H0zM34 7h16v10H34zM66 7h17l-5 10H61z" fill="#ef3e2f"/>
+    <text x="43" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="800" fill="#f0442e">Ofertas de</text>
+    <text x="43" y="46" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#f0442e">R$1,99</text>
+  </g>
+  <g transform="translate(592 14)" filter="url(#drop)">
+    <rect width="91" height="32" rx="16" fill="#fff" stroke="#ddd" stroke-width="2"/>
+    <text x="40" y="22" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#334154">Confira</text>
+    <path d="M74 9l11 7-11 7z" fill="#334154"/>
+  </g>
+</svg>

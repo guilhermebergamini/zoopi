@@ -1,131 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Xhopii - Redefinir senha</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="../css/redefenir_senha.css">
-  <link rel="stylesheet" href="../css/login.css">
-<link rel="icon" href="../assets/images/icone zoppi.png" type="image/png">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xhopii | Redefinir senha</title>
+  <link rel="icon" href="/zoopi/src/assets/images/icone zoppi.png" type="image/png">
+  <link rel="stylesheet" href="/zoopi/src/css/login.css" />
+  <link rel="stylesheet" href="/zoopi/src/css/redefenir_senha.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
 
-   <!-- HEADER -->
-  <header class="header">
-    <section class="top-bar">
-      <section class="container d-flex align-items-center justify-content-between">
-        <section class="logo">
-          <img src="../assets/images/logo.png" alt="Logo zoppi">
-          <h1>Zoppi</h1>
-          <span class="header-separator">|</span>
-          <span class="header-title">Entre</span>
-        </section>
-        <a href="#" class="help-link">Precisa de ajuda?</a>
-      </section>
+<body>
+  <header class="login-auth-header">
+    <section class="login-header-inner">
+      <a class="login-brand" href="login.html">
+        <img src="/zoopi/src/assets/images/logo.png" alt="Logo Xhopii">
+        <strong class="login-brand-name">Xhopii</strong>
+        <span class="login-brand-title">Redefinir senha</span>
+      </a>
+      <a href="#" class="login-help">Precisa de ajuda?</a>
     </section>
   </header>
 
-  <!-- CONTEÚDO PRINCIPAL -->
-  <main>
-    <section class="card">
-      <section class="card-header">
-        <a href="login.html"><section class="back-btn">&#8592;</section></a>
-        <section class="card-title">Redefinir senha</section>
+  <main class="redefinir-main">
+    <section class="redefinir-card">
+      <section class="redefinir-card-header">
+        <a class="redefinir-back" href="login.html" aria-label="Voltar para o login">&#8592;</a>
+        <h1 class="redefinir-title">Redefinir senha</h1>
       </section>
-      <section class="form">
-        <section class="input-wrap">
-          <input type="email" placeholder="Email" />
-        </section>
-        <section>
-          <a href="index.html"><button class="submit-btn">ENVIAR</button></a>
-        </section>
-      </section>
+
+      <form class="redefinir-form">
+        <input type="email" class="redefinir-input" placeholder="Email" autocomplete="email">
+        <a class="redefinir-submit" href="index.html">ENVIAR</a>
+      </form>
     </section>
   </main>
 
-<!-- FOOTER -->
-  <footer class="site-footer">
-    <section class="container">
-      <section class="row footer-links">
+  <footer class="login-footer">
+    <section class="login-footer-grid">
+      <section>
+        <h2 class="login-footer-title">ATENDIMENTO AO CLIENTE</h2>
+        <ul>
+          <li><a href="#">Central de Ajuda</a></li>
+          <li><a href="#">Como Comprar</a></li>
+          <li><a href="#">Metodos de Pagamento</a></li>
+          <li><a href="#">Garantia Xhopii</a></li>
+          <li><a href="#">Devolucao e Reembolso</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Ouvidoria</a></li>
+        </ul>
+      </section>
 
-        <!-- Atendimento ao Cliente -->
-        <section class="col-md-2">
-          <h6 class="footer-title">ATENDIMENTO AO CLIENTE</h6>
-          <ul>
-            <li><a href="#">Central de Ajuda</a></li>
-            <li><a href="#">Como Comprar</a></li>
-            <li><a href="#">Métodos de Pagamento</a></li>
-            <li><a href="#">Garantia Xhopii</a></li>
-            <li><a href="#">Devolução e Reembolso</a></li>
-            <li><a href="#">Fale Conosco</a></li>
-            <li><a href="#">Ouvidoria</a></li>
-          </ul>
+      <section>
+        <h2 class="login-footer-title">SOBRE A XHOPII</h2>
+        <ul>
+          <li><a href="#">Sobre Nos</a></li>
+          <li><a href="#">Politicas Xhopii</a></li>
+          <li><a href="#">Politica de Privacidade</a></li>
+          <li><a href="#">Programa de Afiliados da Xhopii</a></li>
+          <li><a href="#">Seja um Entregador Xhopii</a></li>
+          <li><a href="#">Ofertas Relampago</a></li>
+          <li><a href="#">Xhopii Blog</a></li>
+          <li><a href="#">Imprensa</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="login-footer-title">PAGAMENTO</h2>
+        <section class="login-payment">
+          <img src="/zoopi/src/assets/images/pix.png" alt="Pix">
+          <img src="/zoopi/src/assets/images/boleto.png" alt="Boleto">
+          <img src="/zoopi/src/assets/images/amex.png" alt="American Express">
+          <img src="/zoopi/src/assets/images/visa.png" alt="Visa">
+          <img src="/zoopi/src/assets/images/mc.png" alt="Mastercard">
+          <img src="/zoopi/src/assets/images/hiper.png" alt="Hipercard">
+          <img src="/zoopi/src/assets/images/elo-logo.svg" alt="Elo">
         </section>
+      </section>
 
-        <!-- Sobre a Xhopii -->
-        <section class="col-md-2">
-          <h6 class="footer-title">SOBRE A XHOPII</h6>
-          <ul>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Políticas Xhopii</a></li>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Programa de Afiliados da Xhopii</a></li>
-            <li><a href="#">Seja um Entregador Xhopii</a></li>
-            <li><a href="#">Ofertas Relâmpago</a></li>
-            <li><a href="#">Xhopii Blog</a></li>
-            <li><a href="#">Imprensa</a></li>
-          </ul>
-        </section>
+      <section>
+        <h2 class="login-footer-title">SIGA-NOS</h2>
+        <ul class="login-social-list">
+          <li><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i>YouTube</a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+        </ul>
+      </section>
 
-        <!-- Pagamento -->
-        <section class="col-md-2">
-          <h6 class="footer-title">PAGAMENTO</h6>
-          <section class="payment-icons" style="display: flex; gap: 5px; flex-wrap: wrap;">
-            <img src="../assets/images/pix.png" alt="Pix" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-            <img src="../assets/images/boleto.png" alt="Boleto" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-            <img src="../assets/images/amex.png" alt="AMEX" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-            <img src="../assets/images/visa.png" alt="VISA" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-            <img src="../assets/images/mc.png" alt="Mastercard" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-            <img src="../assets/images/hiper.png" alt="Hiper" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-            <img src="../assets/images/elo.png" alt="Elo" class="payment-badge" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;">
-          </section>
-        </section>
-
-        <!-- Siga-nos -->
-        <section class="col-md-2">
-          <h6 class="footer-title">SIGA-NOS</h6>
-          <ul class="social-list">
-            <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
-            <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i> YouTube</a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-          </ul>
-        </section>
-
-        <!-- Atendimento / QR / Apps -->
-        <section class="col-md-3">
-          <h6 class="footer-title">ATENDIMENTO AO CLIENTE</h6>
-  <img src="../assets/images/qr code.png" alt="qr" style="padding: 2px; border: none; height: 124px; object-fit: contain; width: auto; background-color: white;">
-          <section class="app-badges mt-2">
-            <a href="#" class="app-badge">
-            <a href="#" class="app-badge">
-              <img src="../assets/images/googleplay.png" alt="googleplay" style="padding: 2px; border: none; height: 24px; object-fit: contain; width: auto; background-color: white;"> Google Play
-            </a>
-            <a href="#" class="app-badge">
-              <img src="../assets/images/apple.png" alt="appstore" style="padding: 2px; border: none; height: 32px; object-fit: contain; width: auto; background-color: white;"> App Store
-            </a>
-          </section>
-        </section>
-
-      </section><!-- /.row -->
+      <section>
+        <h2 class="login-footer-title">ATENDIMENTO AO CLIENTE</h2>
+        <img class="login-qr" src="/zoopi/src/assets/images/qr code.png" alt="QR Code">
+        <img class="login-store" src="/zoopi/src/assets/images/google-play-badge.svg" alt="Google Play">
+        <img class="login-store" src="/zoopi/src/assets/images/app-store-badge.svg" alt="App Store">
+      </section>
     </section>
 
-    <section class="footer-bottom">
-      <p>© 2023 Xhopii. Todos os direitos acadêmicos reservados</p>
+    <section class="login-footer-bottom">
+      <p>&copy; 2023 Xhopii. Todos os direitos acad&ecirc;micos reservados</p>
     </section>
   </footer>
 </body>
+
 </html>
